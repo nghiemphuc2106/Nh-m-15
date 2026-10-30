@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Thử Nghiệm - Trang chủ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="top"></div>
+    <header>
+        <h1>🏠 Website Thử Nghiệm</h1>
+        <p>Website tĩnh dùng để kiểm tra công cụ Link Checker</p>
+        <nav>
+            <a href="index.html">Trang chủ</a> |
+            <a href="about.html">Giới thiệu</a> |
+            <a href="products.html">Sản phẩm</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="contact.html">Liên hệ</a> |
+            <a href="team.html">Đội ngũ</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="gallery.html">Thư viện ảnh</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Chào mừng đến Website Thử Nghiệm</h2>
+            <p>Đây là website được tạo ra với mục đích kiểm thử công cụ Link Checker.</p>
+
+            <!-- Link bình thường (OK) -->
+            <p><a href="about.html">Tìm hiểu thêm về chúng tôi</a></p>
+            <p><a href="products.html">Xem danh sách sản phẩm</a></p>
+
+            <!-- ⚠️ LỖI 1: Liên kết 404 (trang không tồn tại) -->
+            <p><a href="khong-ton-tai.html">Trang không tồn tại (404)</a></p>
+
+            <!-- ⚠️ LỖI 2: Ảnh hỏng (file ảnh không có) -->
+            <p><img src="images/khong-co-anh.jpg" alt="Ảnh bị hỏng"></p>
+
+            <!-- Ảnh bình thường (OK) -->
+            <p><img src="images/logo.png" alt="Logo website"></p>
+
+            <!-- ⚠️ LỖI 3: Anchor link không tồn tại -->
+            <p><a href="about.html#khong-co-section">Đi đến section không tồn tại</a></p>
+
+            <!-- Anchor link hợp lệ -->
+            <p><a href="#top">Quay lên đầu trang</a></p>
+            <p><a href="about.html#team">Xem đội ngũ</a></p>
+
+            <!-- ⚠️ LỖI 4: Liên kết ra ngoài phạm vi -->
+            <p><a href="http://example.com/ngoai-pham-vi">Link ngoài phạm vi</a></p>
+
+            <!-- Liên kết con -->
+            <p><a href="services/web-design.html">Dịch vụ thiết kế web</a></p>
+            <p><a href="services/seo.html">Dịch vụ SEO</a></p>
+        </section>
+
+        <section>
+            <h2 id="news">Tin tức mới nhất</h2>
+            <ul>
+                <li><a href="blog/post1.html">Bài viết 1: Cách kiểm tra liên kết</a></li>
+                <li><a href="blog/post2.html">Bài viết 2: Tối ưu SEO</a></li>
+                <li><a href="blog/post3.html">Bài viết 3: Thiết kế responsive</a></li>
+                <!-- ⚠️ LỖI 5: Bài viết không tồn tại -->
+                <li><a href="blog/post-khong-co.html">Bài viết không tồn tại</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Thử Nghiệm</p>
+        <a href="sitemap.html">Sitemap</a> |
+        <a href="privacy.html">Chính sách bảo mật</a>
+    </footer>
+</body>
+</html>
